@@ -1,0 +1,521 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ede6db;
+  color: #000000;
+}
+
+header {
+  position: fixed;
+  background-color: #6B8E23; 
+  color: #fff;
+  padding: 20px 100px;
+  width: 100%;
+  text-align: left;
+  justify-content: space-between;
+  transition: 0.6s;
+  z-index: 100000;
+  display: flex;
+}
+
+header.sticky
+{
+  padding: 10px 100px;
+  background-color: #83a04a;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-weight: 700;
+}
+
+nav li {
+  margin-right: 20px;
+  font-family: "Poppins", sans-serif;
+
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 115px 20px;
+  background-image: url(https://i.pinimg.com/736x/7f/82/ff/7f82ffbbdf8f531520e6a179a763a049.jpg);
+  background-size: 110%;
+  background-position: center 65%; 
+  height: 50vh;
+}
+
+.hero img {
+  max-width: 300px; 
+  width: 100%; 
+  height: auto; 
+  margin: 0 auto 10px; 
+}
+
+.hero h1 {
+  margin: 20px 0; 
+  font-size: 4em; 
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  font-weight: 900, bold;
+  color: #333;
+  text-shadow: 
+    3px 3px 0px #fff,  /* Shadow ke kanan bawah */
+   -3px 3px 0px #fff,  /* Shadow ke kiri bawah */
+    3px -3px 0px #fff, /* Shadow ke kanan atas */
+   -3px -3px 0px #fff; /* Shadow ke kiri atas */
+}
+
+.hero p {
+  margin: 10px 0 20px; 
+  font-size: 1.2em; 
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  background-color: #6a5d4d; /* Warna background di belakang tulisan */
+  padding: 3px 6px; /* Jarak antara teks dan batas background */
+  border-radius: 16px; /* Kelengkungan ujung background */
+  display: inline-block; /* Supaya background mengikuti ukuran teks */
+}
+
+.hero-buttons {
+  margin-bottom: 20px; 
+  text-align: center;
+}
+
+.hero img {
+  max-width: 230px; 
+  width: 100%; 
+  height: auto; 
+  margin: 0 auto 10px; 
+  padding-top: 60px;
+}
+
+.section-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.what-we-do {
+  margin: 0;
+  padding: 40px 20px;
+  text-align: left;
+  background-color: #c0dd87;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.what-we-do img {
+  max-width: 450px;
+  float: left;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  margin-right: 25px;
+}
+
+.what-we-do h2 {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 2.5em;
+}
+
+.what-we-do p {
+  font-family: "Poppins", sans-serif;
+}
+
+.what-we-do ul {
+  font-family: "Poppins", sans-serif;
+}
+
+.scientific-advantage {
+  margin: 0;
+  padding: 30px 20px;
+  text-align: left;
+  background-color: #c0dd87;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.scientific-advantage img {
+  max-width: 450px;
+  float: left;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  margin-right: 25px;
+}
+
+.scientific-advantage h2 {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.scientific-advantage p {
+  font-family: "Poppins", sans-serif;
+}
+
+.scientific-advantage ul {
+  font-family: "Poppins", sans-serif;
+}
+
+.doctor-info {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f4f4f4;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.doctor-info p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.our-portfolio {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.our-portfolio h2 {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 250%;
+}
+
+.our-portfolio p {
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  margin: 15px;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.portfolio-item img {
+  width: 100%; /* Ensure the image fills the container width */
+  height: 300px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Crop the image to cover the area */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image */
+  border-radius: 10px; /* Optional: Adds rounded corners to images */
+  transform: scale(1.05); /* Slightly zoom in on the image */
+  transition: transform 0.3s; /* Smooth transition for zoom effect */
+}
+
+.portfolio-item img:hover {
+  transform: scale(1.1); /* Zoom in further on hover */
+}
+
+.featured-and-generator {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.feature-product, .menu-generator {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.feature-product h2 {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 2.5em;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.feature-product h4 {
+  font-family: "Poppins", sans-serif;
+  font-style: bold;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.feature-product p {
+  font-family: "Poppins", sans-serif;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-top: 5px;
+}
+
+.feature-product img {
+  max-width: 410px;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.menu-generator h2 {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 2.5em;
+}
+
+.menu-generator p {
+  font-family: "Poppins", sans-serif;
+}
+
+.feature-product {
+  margin-right: 20px;
+  background-color: #eedc82;
+  border-radius: 10px;
+}
+
+.menu-generator {
+  margin-left: 20px;
+  background-color: #EEDC82;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#nutrition-result {
+  background-color: #fff9c4; 
+  border: 2px solid #a2884a; 
+  border-radius: 3px
+}
+
+#recipe-display {
+  background-color: #fff9c4; 
+  border: 2px solid #a2884a; 
+  border-radius: 3px
+}
+
+.get-discovered, .articles, .contact-us {
+  padding: 40px 20px;
+  background-color: #ede6db;
+}
+
+/* New Sections */
+.stay-informed {
+  background-color: #c0dd87; 
+  padding: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.stay-informed h2 {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 2.5em;
+}
+
+.stay-informed p {
+  font-family: "Poppins", sans-serif;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.latest-articles, .contact-us {
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.latest-articles h2 {
+  font-family: "Protest Strike", sans-serif;
+  color: #6B8E23; 
+  font-size: 2.5em;
+}
+
+.latest-articles h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: bold;
+}
+
+.latest-articles p {
+  font-family: "Poppins", sans-serif;
+}
+
+.latest-articles ul {
+  font-family: "Poppins", sans-serif;
+}
+
+.article-list {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.article-item {
+  background-color: #ffffff; /* Light gray for article items */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 250px; /* Fixed width for article items */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+footer {
+  background-color: #6B8E23;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-left {
+  flex-basis: 20%;
+  align-items: center;
+  margin-left: -40px;
+}
+
+.footer-center {
+  flex-basis: 35%;
+}
+
+.footer-right-container {
+  flex-basis: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-right, .footer-location {
+  flex-basis: 45%;
+}
+
+.footer-left img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: -15px;
+}
+
+.footer-center h3,
+.footer-right h3,
+.footer-location h3 {
+  margin-bottom: 10px;
+}
+
+.footer-center p,
+.footer-right p,
+.footer-location p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-center p i,
+.footer-right p i,
+.footer-location p i {
+  margin-right: 10px;
+}
+
+.footer-left p,
+.footer-center p a,
+.footer-right p a,
+.footer-location p a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-center p a:hover,
+.footer-right p a:hover,
+.footer-location p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-left,
+  .footer-center,
+  .footer-right-container {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-right, .footer-location {
+    flex-basis: 100%;
+  }
+}
+
+h2 {
+  margin-top: 0;
+  color: #6a5d4d; 
+  text-shadow: 
+    2px 2px 2px #ffffff,  /* Shadow ke kanan bawah */
+   -2px 2px 2px #ffffff,  /* Shadow ke kiri bawah */
+    2px -2px 2px #ffffff, /* Shadow ke kanan atas */
+   -2px -2px 2px #ffffff; /* Shadow ke kiri atas */
+}
+

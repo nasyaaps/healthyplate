@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyPlate</title>
+    <link rel="stylesheet" href="healthyplate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Protest+Strike&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="sticky">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#latest-articles">Articles</a></li> 
+                <li><a href="#featured-and-generator">Custom Menu Generator</a></li> 
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero" style="background-image: url(https://images.unsplash.com/photo-1604908815567-c9727d53f92a?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+        <img src="logohealthy.png" alt="Healthy Plate Logo">
+        <h1>Transform Your Plate with HealthyPlate</h1>
+        <p>Get personalized meal recommendations for a healthier you</p>
+        <div class="hero-buttons">
+            <button onclick="smoothScroll('#featured-and-generator')">Get Started</button> 
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="what-we-do" id="about">
+        <img src="https://i.pinimg.com/564x/b6/50/27/b65027e4f952fe7ad4ec76b7ac7e5670.jpg" alt="Healthy Meal Preparation" class="section-image">
+        <div class="wrapper"> 
+            <div class="text-box">
+                <h2>What We Do ?</h2>
+                <p>Comprehensive healthy eating solutions for you</p>
+                <ul>
+                    <li>We provide personalized meal recommendations based on your available ingredients.</li>
+                    <li>Our platform is designed to help you achieve your health and nutritional goals.</li>
+                    <li>We offer practical guidance for those starting their healthy eating journey.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Our Portfolio Section -->
+    <section class="our-portfolio">
+        <h2>Our Success Stories</h2>
+        <p>See how our users transformed their meals</p>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://i.pinimg.com/564x/b5/b6/f2/b5b6f250c580d99e8c3e5e0e1f414dcb.jpg" alt="Healthy Recipe 1">
+                <h3>Recipe 1</h3>
+                <p>Discover how simple ingredients can create delicious meals.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://i.pinimg.com/564x/97/d8/db/97d8db51635031da6e6775b20118c862.jpg" alt="Healthy Recipe 2">
+                <h3>Recipe 2</h3>
+                <p>Learn how to cook healthy meals with what you have at home.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- The Scientific Advantage Section -->
+    <!-- The Scientific Advantage Section -->
+    <section class="scientific-advantage">
+        <img src="https://i.pinimg.com/564x/10/3e/2d/103e2df21ac73ec8ee6ce85fdfbbdefb.jpg" alt="Nutrition Research" class="section-image">
+        <div class="wrapper"> 
+            <div class="text-box">
+                <h2>Our Scientific Advantage</h2>
+                <p>We use the latest nutritional research to guide you</p>
+                <ul>
+                    <li>Our team of nutritionists creates meal plans based on the latest dietary guidelines.</li>
+                    <li>We utilize advanced algorithms to personalize your meal suggestions.</li>
+                    <li>We provide evidence-based insights to help you make informed food choices.</li>
+                </ul>
+            <!-- Adding Doctor's Name and Credentials -->
+            <div class="doctor-info">
+                <p><strong>Dr. Sandra Tan</strong>, MSc in Nutrition and Clinical Dietetics.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Featured Recipe and Custom Menu Generator Section (Side by Side) -->
+    <section class="featured-and-generator" id="featured-and-generator">
+        <div class="feature-product">
+            <h2>Featured Recipe</h2>
+            <h4>Try our delicious, healthy recipe of the week!</h4>
+            <p>Our featured recipe is designed to meet your nutritional needs while being easy to prepare.</p>
+            <img src="https://i.pinimg.com/564x/ed/00/21/ed002161d436f55815719b0448111d63.jpg">
+        </div>
+
+        <!-- Custom Menu Generator -->
+        <div class="menu-generator" id="custom-menu-generator">
+            <h2>Custom Menu Generator</h2>
+            <p>Select ingredients you have:</p>
+            <select id="ingredient-select">
+                <option value="tomato">Tomato</option>
+                <option value="egg">Egg</option>
+                <option value="lettuce">Lettuce</option>
+                <option value="cucumber">Cucumber</option>
+            </select>
+            <button id="generate-menu">Generate Menu</button>
+
+            <div class="result-box">
+                <div class="result" id="menu-result">
+                    <h3>Menu:</h3>
+                    <p>No menu generated yet.</p>
+                </div>
+                <div class="result" id="nutrition-result">
+                    <h3>Nutritional Information:</h3>
+                    <p>No nutritional info available.</p>
+                </div>
+                <div class="result" id="recipe-display">
+                    <h3>Recipe:</h3>
+                    <p>No recipe available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stay Informed Section -->
+    <section class="stay-informed">
+        <h2>Stay Informed</h2>
+        <p>Subscribe to our newsletter for the latest updates.</p>
+        <input type="email" id="email-input" placeholder="Your email address" />
+        <button onclick="showModal()">Subscribe</button>
+    
+        <div id="subscribe-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Thank you for subscribing!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Latest Articles Section -->
+    <section class="latest-articles" id="latest-articles"> 
+        <h2>Latest Articles</h2>
+        <h3>5 Tips for Healthy Eating</h3>
+        <p>Eating healthy doesn't have to be complicated. Here are five simple tips to help you get started:</p>
+        <ul>
+            <li>Incorporate a variety of fruits and vegetables into your meals.</li>
+            <li>Choose whole grains over refined grains.</li>
+            <li>Stay hydrated by drinking plenty of water.</li>
+            <li>Plan your meals in advance to avoid last-minute unhealthy choices.</li>
+            <li>Listen to your body and eat when you're hungry.</li>
+        </ul>
+
+        <h3>The Benefits of Meal Prepping</h3>
+        <p>Meal prepping can save you time and money while helping you stick to your healthy eating goals. Here are some benefits:</p>
+        <ul>
+            <li>Reduces food waste by using ingredients you already have.</li>
+            <li>Makes it easier to make healthy choices during busy weeks.</li>
+            <li>Helps you control portion sizes.</li>
+        </ul>
+    </section>
+    
+    <!-- Contact Us Section -->
+<!-- Contact Us Section -->
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="footer-left">
+            <img src="logohealthy.png" alt="Healthy Plate Logo">
+            <p>We're here to support <br> your healthy eating journey!</p>
+        </div>
+        <div class="footer-center">
+            <h3>Visit Us:</h3>
+            <p><img src="world-wide-web.png" alt="Website Icon" style="width: 20px; margin-right: 10px;">
+                <a href="index.html" target="_self">www.healthyplate.com</a></p>
+            <p>Your go-to platform for healthy meal <br> suggestions based on what you have on hand.</p>
+        </div>
+        <div class="footer-right-container">
+            <div class="footer-right">
+                <h3>Connect with Us:</h3>
+                <p><img src="mail.png" alt="Email Icon" style="width: 20px; margin-right: 10px;">
+                    <a href="mailto:info@healthyplate.com" target="_blank">info@healthyplate.com</a></p>
+                <p><img src="whatsapp.png" alt="WhatsApp Icon" style="width: 20px; margin-right: 10px;">
+                    <a href="https://wa.me/+6281250229316" target="_blank">+6281250229316</a></p>
+            </div>
+            <div class="footer-location">
+                <h3>Location:</h3>
+                <p><img src="location.png" alt="Location Icon" style="width: 20px; margin-right: 10px;">
+                    <a href="https://maps.app.goo.gl/oRZ2VD9ehSehao9o8?g_st=ic" target="_blank">Surabaya, East Java, Indonesia</a></p>
+            </div>
+        </div>
+    </div>     
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
